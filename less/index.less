@@ -32,6 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+h1{
+	color: black;
+}
 ol, ul {
 	list-style: none;
 }
@@ -54,6 +57,135 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	margin: 0 4%;
+	font-size: 65.2%;
+}
+@dev: null; //dev borders
+p{
+	font-size: 1.6rem;
+	color: black;
+	line-height: 2rem;
+}
+header{
+	border: @dev;
+	display: flex;
+	div.header{
+		width: 60%;
+	}
+	nav{
+	 	border: @dev;
+		width: 40%;
+		margin: 2% 0;
+		display: flex;
+		justify-content: space-between;
+		a{	
+			font-size: 1.6rem;
+			text-decoration: none;
+			color: black;
+		}
+
+	}
 }
 
+section.main{
+	background: #E9ECEF;
+	padding: 7% 4%;
+
+	img{
+		width: 40%;
+	}
+	h1{
+		margin-top: 1%;
+		font-size: 3rem;
+		border: @dev;
+	}
+	h3{				//tech my jam
+		font-size: 2rem;
+		padding: 5% 0;
+		border-bottom: 1px solid lightgray;
+	}
+	p{
+		font-size: 1.6rem;
+		margin: 5% 0;
+	}
+	button{
+		font-size: 1.6rem;
+		background: gray;
+		color: white;
+		border: none;
+		border-radius: 3px;
+		padding: 1%;
+	}
+}
+/******************info section*********************/
+section.info{
+	display: flex;
+	justify-content: space-between;
+	margin: 5% 0;
+	div.listen{
+		border: @dev;
+		width: 48%;
+		h2{
+			font-size: 2.5rem;
+			margin: 5% 0;
+		}
+	}
+	h3{
+		font-size: 2rem;
+	}
+	div.stuff{
+		border: @dev;
+		width: 48%;
+		p{
+			border: 1px solid lightgray;
+			padding: 5%;
+			border-collapse: collapse;
+		}
+	}
+}
+/*********************work history*********************/
+section.history{
+	margin: 5% 0;
+	h2{
+		font-size: 2rem;
+	}
+	table{
+		border-collapse: collapse;
+		width: 100%;
+		height: 20rem;
+		text-align: left;
+		vertical-align: middle;
+	
+		tr{
+			width: 100%;
+		}
+		tr:nth-child(even){
+			background: #F2F2F2;
+		}
+		th{
+			//border: @dev;
+			font-weight: bold;
+			font-size: 1.6rem;
+			vertical-align: middle;
+		}
+		tr{
+			font-size: 1.6rem;
+			vertical-align: middle;
+			border-top: 1px solid lightgray;
+		}
+		td{
+			vertical-align: middle;
+		}
+	}
+}
+
+footer{
+	background: #808080;
+	font-weight: bold;
+	text-align: center;
+	padding: 3%;
+	p{
+		color: white;
+	}
+}
