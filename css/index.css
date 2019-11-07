@@ -139,9 +139,17 @@ body {
   margin: 0 4%;
   font-size: 65.2%;
 }
-p {
-  font-size: 1.6rem;
+.fontStyle {
   color: black;
+  font-size: 1.6rem;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  color: black;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 header {
@@ -159,9 +167,9 @@ header nav {
   justify-content: space-between;
 }
 header nav a {
-  font-size: 1.6rem;
   text-decoration: none;
   color: black;
+  font-size: 1.6rem;
 }
 section.main {
   background: #E9ECEF;
@@ -185,6 +193,7 @@ section.main p {
   margin: 5% 0;
 }
 section.main button {
+  color: black;
   font-size: 1.6rem;
   background: gray;
   color: white;
@@ -259,4 +268,24 @@ footer {
 }
 footer p {
   color: white;
+}
+@media (max-width: 500px) {
+  header div.header {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  section.info {
+    border: null;
+    display: flex;
+    flex-direction: column;
+  }
+  section.info div.listen {
+    width: 100%;
+    margin: 5% 0;
+  }
+  section.info div.stuff {
+    width: 100%;
+  }
 }
